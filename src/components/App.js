@@ -1,16 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import CardList from "./CardList";
 import gateImage from "../data/golden-gate.jpg";
 import placeholderImage from "../data/placeholder.jpg";
-const data = require("../data/data.json");
-
-console.log(data);
+const cardData = require("../data/data.json");
 
 const App = () => {
+  const [data, setData] = useState(cardData);
+
   return (
-    <div>
-      App!
-      <img src={gateImage} alt="Golden Gate Bridge" />
-      <img src={placeholderImage} alt="Placeholder" />
+    <div className="container">
+      <CardList cards={data} />
     </div>
   );
 };
