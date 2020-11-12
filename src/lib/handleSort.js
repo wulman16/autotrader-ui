@@ -1,5 +1,4 @@
 const handleSort = (data, category, order) => {
-  console.log(order);
   let result;
   if (category === "Heading" || category === "Subheading") {
     result = data.sort((a, b) =>
