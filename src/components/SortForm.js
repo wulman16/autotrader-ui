@@ -11,7 +11,7 @@ const SortForm = ({ handleSubmit }) => {
 
   return (
     <div className="row">
-      <form className="form-inline mb-3 mx-auto" onSubmit={onFormSubmit}>
+      <form className="form-inline mb-5 mx-auto" onSubmit={onFormSubmit}>
         <label className="col-form-label mr-2 mb-1 mb-sm-0">
           Sort Results By:
         </label>
